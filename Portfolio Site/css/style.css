@@ -416,14 +416,9 @@ div iframe {
 	background-color: #D1D1D1;
 }
 
-.contentStart {
-	padding-top:80px;
-	text-align:center;
-    background-color: #ffffff;
-}
-
 .videoSection {
-	text-align:center;
+    text-align: center;
+    width:100%;
     background-color: #ffffff;
 }
 
@@ -475,4 +470,26 @@ img {
 
 .cadDesign{
     display: inline;
+}
+
+.keepParagraphAndVideoTogether{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    background-color: red;
+}
+
+.vimeoVideoContainer {
+    width: 500px;
+    height: 220px;
+    float: left;
+}
+
+.pAlignRight {
+    float: right;
+    padding-top: 25px;
+    padding-right: 25%;
+    text-align: left;;
+    width: 40%;
+    height: auto;
 }

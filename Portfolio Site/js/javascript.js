@@ -8,7 +8,7 @@ function showUXUIWork(){
 
 function showMotionVideoWork(){
 	showWork("showMotionVideo");
-	hideWork("cadWork");
+	hideWork("cadDesign");
 	hideWork("uxUI");
 	hideWork("graphicDesign");
 	hideWork("coding");
@@ -18,7 +18,7 @@ function showGraphicDesignWork(){
 	showWork("graphicDesign");
 	hideWork("showMotionVideo");
 	hideWork("uxUI");
-	hideWork("cadWork");
+	hideWork("cadDesign");
 	hideWork("coding");
 }
 
@@ -27,7 +27,7 @@ function showCodingWork(){
 	hideWork("showMotionVideo");
 	hideWork("uxUI");
 	hideWork("graphicDesign");
-	hideWork("cadWork");
+	hideWork("cadDesign");
 	}
 
 function showCADWork() {
