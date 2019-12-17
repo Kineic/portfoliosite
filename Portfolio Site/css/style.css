@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,500&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -361,7 +362,7 @@ textarea {
 }
 
 /*==============================================================RESET CODE ABOVE==============================================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,500&display=swap');
+
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -445,7 +446,7 @@ div iframe {
 }
 
 .workChoiceButton:hover {
-    background-color: #d1d1d1;
+    background-color: #bebebe;
 }
 
 img {
@@ -454,6 +455,7 @@ img {
 
 .showMotionVideo{
     display: inline;
+    
 }
 
 .uxUI{
@@ -475,21 +477,40 @@ img {
 .keepParagraphAndVideoTogether{
     text-align: center;
     display: inline-block;
-    width: 80%;
-    background-color: red;
+    width: 100%;
+    height: auto;
+    background-color: teal;
+    margin: -1 auto 0 auto;
+    padding: 1px 0 0 0;
+}
+
+.textBox{
+    display: inline-block;
+    bottom: 50px;
+    vertical-align: bottom;
+    width: 400px;
+    height: 260px;
+    margin: 0 auto;
+    overflow: auto;
+    border: 0 0 3px 0;
+    background-color: thistle;
+    
 }
 
 .vimeoVideoContainer {
-    width: 500px;
-    height: 220px;
-    float: left;
+    display: inline-block;
+    width: 525px;
+    height: 285px;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: top;
+    background-color: violet;
 }
 
 .pAlignRight {
-    float: right;
-    padding-top: 25px;
-    padding-right: 25%;
-    text-align: left;;
-    width: 40%;
+    margin-top: 0px;
+    width: 350px;
     height: auto;
+    text-align: left;
+    float: left;
 }
