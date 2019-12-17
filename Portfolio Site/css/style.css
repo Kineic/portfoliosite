@@ -374,7 +374,6 @@ body {
 .wrapper {
 	max-width: 80%;
 	margin: auto;
-	background: white;
 }
 
 .circular--square {
@@ -384,7 +383,7 @@ body {
 .navBar {
 	width: 80%;
 	height: 70px;
-	background-color: #e1e1e1;
+	background-color: #bebebe;
 	position:fixed;
 	top:0;
 	-moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
@@ -401,27 +400,79 @@ div ul li {
 	float:right;
 	text-decoration:none;
 	display: block;
-	position: relative;
 	padding-top: 25px;
 }
 
-div ul li a {
-	padding: 25px 20px 28px 20px;
+.navButton {
+	padding: 23px 20px 28px 20px;
+    cursor: pointer;
 }
 
 div iframe {
 	padding: 25px 20px 28px 20px;
 }
 
-div ul li a:hover {
+.navButton:hover {
 	background-color: #D1D1D1;
 }
 
 .contentStart {
 	padding-top:80px;
 	text-align:center;
+    background-color: #ffffff;
 }
 
 .videoSection {
 	text-align:center;
+    background-color: #ffffff;
+}
+
+.workChoiceNav {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    padding-top: 70px;
+}
+
+.centerUl {
+    display: inline-table;
+}
+
+.centerLi {
+    display: inline;
+}
+
+.workChoiceButton {
+    padding: 100% 10px 8px 10px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.workChoiceButton:hover {
+    background-color: #d1d1d1;
+}
+
+img {
+    display: none;
+}
+
+.showMotionVideo{
+    display: inline;
+}
+
+.uxUI{
+    display: inline;
+}
+
+.graphicDesign{
+    display: inline;
+}
+
+.coding{
+    display: inline;
+}
+
+.cadDesign{
+    display: inline;
 }
