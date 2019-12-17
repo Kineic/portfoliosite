@@ -1,114 +1,53 @@
 function showUXUIWork(){
-	var ui = document.getElementsByClassName("uxUI");
-	for(i = 0; i < ui.length; i++){
-		document.getElementsByClassName("uxUI")[i].style.display = "inline";
-	}
-	var video = document.getElementsByClassName("showMotionVideo");
-	for(j = 0; j < video.length; j++){
-		document.getElementsByClassName("showMotionVideo")[j].style.display = "none";
-	}
-	var graphic = document.getElementsByClassName("graphicDesign");
-	for(x = 0; x < graphic.length; x++){
-		document.getElementsByClassName("graphicDesign")[x].style.display = "none";
-	}
-	var cad = document.getElementsByClassName("cadDesign");
-	for(v = 0; v < cad.length; v++){
-		document.getElementsByClassName("cadDesign")[v].style.display = "none";
-	}
-	var coding = document.getElementsByClassName("coding");
-	for(g = 0; g < coding.length; g++){
-		document.getElementsByClassName("coding")[g].style.display = "none";
-	}
+	showWork("exUI");
+	hideWork("showMotionVideo");
+	hideWork("cadDesign");
+	hideWork("graphicDesign");
+	hideWork("coding");
 }
 
 function showMotionVideoWork(){
-	var video = document.getElementsByClassName("showMotionVideo");
-	for(i = 0; i < video.length; i++){
-		document.getElementsByClassName("showMotionVideo")[i].style.display = "inline";
-	}
-	var graphic = document.getElementsByClassName("graphicDesign");
-	for(j = 0; j < graphic.length; j++){
-		document.getElementsByClassName("graphicDesign")[j].style.display = "none";
-	}
-	var ui = document.getElementsByClassName("uxUI");
-	for(x = 0; x < ui.length; x++){
-		document.getElementsByClassName("uxUI")[x].style.display = "none";
-	}
-	var cad = document.getElementsByClassName("cadDesign");
-	for(v = 0; v < cad.length; v++){
-		document.getElementsByClassName("cadDesign")[v].style.display = "none";
-	}
-	var coding = document.getElementsByClassName("coding");
-	for(g = 0; g < coding.length; g++){
-		document.getElementsByClassName("coding")[g].style.display = "none";
-	}
+	showWork("showMotionVideo");
+	hideWork("cadWork");
+	hideWork("uxUI");
+	hideWork("graphicDesign");
+	hideWork("coding");
 }
 
 function showGraphicDesignWork(){
-	var graphic = document.getElementsByClassName("graphicDesign");
-	for(i = 0; i < graphic.length; i++){
-		document.getElementsByClassName("graphicDesign")[i].style.display = "inline";
-	}
-	var video = document.getElementsByClassName("showMotionVideo");
-	for(j = 0; j < video.length; j++){
-		document.getElementsByClassName("showMotionVideo")[j].style.display = "none";
-	}
-	var ui = document.getElementsByClassName("uxUI");
-	for(x = 0; x < ui.length; x++){
-		document.getElementsByClassName("uxUI")[x].style.display = "none";
-	}
-	var cad = document.getElementsByClassName("cadDesign");
-	for(v = 0; v < cad.length; v++){
-		document.getElementsByClassName("cadDesign")[v].style.display = "none";
-	}
-	var coding = document.getElementsByClassName("coding");
-	for(g = 0; g < code.length; g++){
-		document.getElementsByClassName("coding")[g].style.display = "none";
-	}
+	showWork("graphicDesign");
+	hideWork("showMotionVideo");
+	hideWork("uxUI");
+	hideWork("cadWork");
+	hideWork("coding");
 }
 
 function showCodingWork(){
-	var code = document.getElementsByClassName("coding");
-	for(i = 0; i < code.length; i++){
-		document.getElementsByClassName("coding")[i].style.display = "inline";
-	}
-	var video = document.getElementsByClassName("showMotionVideo");
-	for(j = 0; j < video.length; j++){
-		document.getElementsByClassName("showMotionVideo")[j].style.display = "none";
-	}
-	var ui = document.getElementsByClassName("uxUI");
-	for(x = 0; x < ui.length; x++){
-		document.getElementsByClassName("uxUI")[x].style.display = "none";
-	}
-	var graphic = document.getElementsByClassName("graphicDesign");
-	for(v = 0; v < graphic.length; v++){
-		document.getElementsByClassName("graphicDesign")[v].style.display = "none";
-	}
-	var cad = document.getElementsByClassName("cadDesign");
-	for(g = 0; g < cad.length; g++){
-		document.getElementsByClassName("cadDesign")[g].style.display = "none";
-	}
+	showWork("coding");
+	hideWork("showMotionVideo");
+	hideWork("uxUI");
+	hideWork("graphicDesign");
+	hideWork("cadWork");
 	}
 
 function showCADWork() {
-	var cad = document.getElementsByClassName("cadDesign");
-	for(i = 0; i < cad.length; i++){
-		document.getElementsByClassName("cadDesign")[i].style.display = "inline";
+	showWork("cadDesign");
+	hideWork("showMotionVideo");
+	hideWork("uxUI");
+	hideWork("graphicDesign");
+	hideWork("coding");
+}
+
+function showWork(className) {
+	var list = document.getElementsByClassName(className);
+	for(i = 0; i < list.length; i++){
+		list[i].style.display = "inline";
 	}
-	var video = document.getElementsByClassName("showMotionVideo");
-	for(j = 0; j < video.length; j++){
-		document.getElementsByClassName("showMotionVideo")[j].style.display = "none";
-	}
-	var ui = document.getElementsByClassName("uxUI");
-	for(x = 0; x < ui.length; x++){
-		document.getElementsByClassName("uxUI")[x].style.display = "none";
-	}
-	var graphic = document.getElementsByClassName("graphicDesign");
-	for(v = 0; v < graphic.length; v++){
-		document.getElementsByClassName("graphicDesign")[v].style.display = "none";
-	}
-	var coding = document.getElementsByClassName("coding");
-	for(g = 0; g < coding.length; g++){
-		document.getElementsByClassName("coding")[g].style.display = "none";
+}
+
+function hideWork(className) {
+	var list = document.getElementsByClassName(className);
+	for(i = 0; i < list.length; i++){
+		list[i].style.display = "none";
 	}
 }
