@@ -363,13 +363,12 @@ textarea {
 
 /*==============================================================RESET CODE ABOVE==============================================================*/
 
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	background: url(../assets/repeating.jpg);
 	background-repeat: repeat-xy;
-	background-size: 300px auto;
+    background-size: 300px auto;
 }
 
 .wrapper {
@@ -479,22 +478,19 @@ img {
     display: inline-block;
     width: 100%;
     height: auto;
-    background-color: teal;
     margin: -1 auto 0 auto;
-    padding: 1px 0 0 0;
+    padding: 11px 0 0 0;
 }
 
 .textBox{
     display: inline-block;
-    bottom: 50px;
     vertical-align: bottom;
     width: 400px;
     height: 260px;
     margin: 0 auto;
-    overflow: auto;
-    border: 0 0 3px 0;
-    background-color: thistle;
-    
+    border-bottom: 1px solid #000000 ;
+    position: relative;
+    overflow: hidden;
 }
 
 .vimeoVideoContainer {
@@ -504,13 +500,19 @@ img {
     text-align: center;
     margin: 0 auto;
     vertical-align: top;
-    background-color: violet;
 }
 
 .pAlignRight {
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
     margin-top: 0px;
     width: 350px;
     height: auto;
-    text-align: left;
     float: left;
+    text-align: justify;
 }
+
+.pAlignRight::-webkit-scrollbar { 
+    display: none; 
+} 
