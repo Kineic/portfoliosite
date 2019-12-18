@@ -489,8 +489,7 @@ img {
     height: 260px;
     margin: 0 auto;
     border-bottom: 1px solid #000000 ;
-    position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .vimeoVideoContainer {
@@ -503,9 +502,6 @@ img {
 }
 
 .pAlignRight {
-    position: absolute;
-    overflow-x: hidden;
-    overflow-y: scroll;
     margin-top: 0px;
     width: 350px;
     height: auto;
