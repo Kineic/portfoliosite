@@ -485,11 +485,16 @@ img {
 .textBox{
     display: inline-block;
     vertical-align: bottom;
-    width: 400px;
-    height: 260px;
+    width: 350px;
+    height: 257px;
     margin: 0 auto;
+    border-top: 1px solid #000000 ;
     border-bottom: 1px solid #000000 ;
     overflow: auto;
+}
+
+.textBox::-webkit-scrollbar { 
+    display: none; 
 }
 
 .vimeoVideoContainer {
@@ -509,6 +514,10 @@ img {
     text-align: justify;
 }
 
-.pAlignRight::-webkit-scrollbar { 
-    display: none; 
-} 
+.pAlignLeft {
+    margin-top: 0px;
+    width: 350px;
+    height: auto;
+    float: left;
+    text-align: justify;
+}
