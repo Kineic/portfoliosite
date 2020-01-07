@@ -373,11 +373,8 @@ body {
 
 .wrapper {
 	max-width: 80%;
-	margin: auto;
-}
-
-.circular--square {
-  border-radius: 50%;
+    margin: auto;
+    background-color: white;
 }
 
 .navBar {
@@ -391,12 +388,12 @@ body {
     box-shadow: 0 5px 5px rgba(202, 202, 202, 0.30);
 }
 
-a {
+.navBar a, .workChoiceNav a {
 	text-decoration:none;
 	color:black;
 }
 
-div ul li {
+.navBar ul li {
 	float:right;
 	text-decoration:none;
 	display: block;
@@ -408,17 +405,18 @@ div ul li {
     cursor: pointer;
 }
 
-div iframe {
-	padding: 25px 20px 28px 20px;
-}
-
 .navButton:hover {
 	background-color: #D1D1D1;
 }
 
-.videoSection {
+div iframe {
+	padding: 25px 20px 28px 20px;
+}
+
+.row {
     text-align: center;
     width:100%;
+    height: auto;
     background-color: #ffffff;
 }
 
@@ -432,6 +430,7 @@ div iframe {
 
 .centerUl {
     display: inline-table;
+    padding-top: 20px;
 }
 
 .centerLi {
@@ -453,38 +452,40 @@ img {
 }
 
 .showMotionVideo{
-    display: inline;
-    
+    display: inline-block;
 }
 
 .uxUI{
-    display: inline;
+    display: inline-block;
 }
 
 .graphicDesign{
-    display: inline;
+    display: inline-block;
 }
 
 .coding{
-    display: inline;
+    display: inline-block;
 }
 
 .cadDesign{
-    display: inline;
+    display: inline-block;
 }
 
 .keepParagraphAndVideoTogether{
     text-align: center;
     display: inline-block;
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: -1 auto 0 auto;
     padding: 11px 0 0 0;
 }
 
+.textAlignBottom {
+    vertical-align: bottom;
+}
+
 .textBox{
     display: inline-block;
-    vertical-align: bottom;
     width: 350px;
     height: 257px;
     margin: 0 auto;
@@ -518,6 +519,25 @@ img {
     margin-top: 0px;
     width: 350px;
     height: auto;
-    float: left;
+    float: right;
     text-align: justify;
+}
+
+.contentStart {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.rowOneContainer {
+    width: 100%;
+    height: auto;
+}
+
+.aboutText {
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
 }

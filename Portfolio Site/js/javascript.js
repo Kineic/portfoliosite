@@ -41,7 +41,7 @@ function showCADWork() {
 function showWork(className) {
 	var list = document.getElementsByClassName(className);
 	for(i = 0; i < list.length; i++){
-		list[i].style.display = "inline";
+		list[i].style.display = "inline-block";
 	}
 }
 
