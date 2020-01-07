@@ -409,9 +409,7 @@ body {
 	background-color: #D1D1D1;
 }
 
-div iframe {
-	padding: 25px 20px 28px 20px;
-}
+
 
 .row {
     text-align: center;
@@ -469,6 +467,7 @@ img {
 
 .cadDesign{
     display: inline-block;
+    padding-bottom: 20px;
 }
 
 .keepParagraphAndVideoTogether{
@@ -484,6 +483,9 @@ img {
     vertical-align: bottom;
 }
 
+.textAlignTop {
+    vertical-align: top;
+}
 .textBox{
     display: inline-block;
     width: 350px;
@@ -540,4 +542,8 @@ img {
     text-align: justify;
     font-weight: 400;
     font-size: 18px;
+}
+
+iframe {
+    padding: 0;
 }
