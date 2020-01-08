@@ -472,9 +472,6 @@ textarea {
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    background: url(../assets/repeating.jpg);
-    background-repeat: repeat-xy;
-    background-size: 300px auto;
 }
 
 .wrapper {
@@ -637,25 +634,6 @@ img {
     text-align: justify;
 }
 
-.contentStart {
-    margin-top: 70px;
-    width: 100%;
-}
-
-.rowOneContainer {
-    width: 100%;
-    height: auto;
-}
-
-.aboutText {
-    margin: 0 auto;
-    width: 40%;
-    height: auto;
-    text-align: justify;
-    font-weight: 400;
-    font-size: 18px;
-}
-
 .videoPaddingRight {
     padding-right: 40px;
 }
@@ -670,19 +648,80 @@ img {
     border: 1px solid #000000;
 }
 
-.imageDiv {
-    margin: 0 auto;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-image: url(../assets/illustrationCollege.jpg);
-    background-size: contain;
+.homeHeader {
+    margin-top: 70px;
+    width: 100%;
+    height: 937px;
+    background-image: url(../assets/homeHeader-01.jpg);
+    background-repeat: no-repeat;
+    background-color: #00bbb4;
 }
 
-.imageCon {
-    width: 100%;
+.aboutText {
+    float: right;
+    margin: 100px 15% 0 0;
+    width: 40%;
     height: auto;
-    padding-bottom: 20px;
-    padding-top: 20px
+    text-align: justify;
+}
+
+
+.boxEdge {
+    width: 54%;
+    height: 210px;
+    border: 10px solid #ffffff;
+}
+
+.boxEdge p {
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 55px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.quoteBox {
+    padding-bottom: 100px;
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+.quote {
+    color: #ffffff;
+    font-style: italic;
+    float: left;
+    width: 350px;
+}
+
+.subText {
+    font-size: 22px;
+    color: #ffffff;
+
+}
+
+.boxEdgeButtons {
+    width: 54%;
+    height: 70px;
+    border: 10px solid #ffffff;
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boxEdgeButtons:hover {
+    border-style: dashed;
+    cursor: pointer;
+}
+
+.boxEdgeButtons p{
+    padding-top:7px;
+    padding-left: 15px;
+}
+
+.wizard:hover{
+    color:purple;
+    cursor: none;
 }
