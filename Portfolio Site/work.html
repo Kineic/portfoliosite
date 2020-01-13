@@ -10,90 +10,88 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="navBar">
-            <ul>
-                <li>
-                    <a class="navButton" href="home.html">Home</a>
-                    <a class="navButton" href="work.html">Work</a>
-                    <a class="navButton" href="#">Contact</a>
-                </li>
-            </ul>
+    <div class="navBar">
+        <ul>
+            <li>
+                <a class="navButton" href="home.html">Home</a>
+                <a class="navButton" href="work.html">Work</a>
+                <a class="navButton" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="workChoiceNav">
+        <ul class="centerUl">
+            <li class="centerLi">
+                <a class="workChoiceButton" onclick="showCADWork()">3D Design</a>
+                <a class="workChoiceButton" onclick="showUXUIWork()" href="#">UX/UI</a>
+                <a class="workChoiceButton" onclick="showMotionVideoWork()" href="#">Motion/Video</a>
+                <a class="workChoiceButton" onclick="showGraphicDesignWork()" href="#">Graphic Design</a>
+                <a class="workChoiceButton" onclick="showCodingWork()" href="#">Coding</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row showMotionVideo flex-container">
+        <div class="vidCon showMotionVideo videoPaddingRight">
+            <video class="video" controls="" preload="auto">
+                <source src="https://vimeo.com/259625573" width="540" height="260">
+            </video>
         </div>
-        <div class="workChoiceNav">
-            <ul class="centerUl">
-                <li class="centerLi">
-                    <a class="workChoiceButton" onclick="showCADWork()">3D Design</a>
-                    <a class="workChoiceButton" onclick="showUXUIWork()" href="#">UX/UI</a>
-                    <a class="workChoiceButton" onclick="showMotionVideoWork()" href="#">Motion/Video</a>
-                    <a class="workChoiceButton" onclick="showGraphicDesignWork()" href="#">Graphic Design</a>
-                    <a class="workChoiceButton" onclick="showCodingWork()" href="#">Coding</a>
-                </li>
-            </ul>
-        </div>
-        <div class="row showMotionVideo">
-            <div class="vidCon showMotionVideo videoPaddingRight">
-                <video class="video" controls="" preload="auto">
-                    <source src="https://vimeo.com/259625573" width="540" height="260">
-                </video>
-            </div>
-            <div class="textBox textAlignTop">
-                <p class="pAlignRight">This was a little project I was asked to do for a client that wanted to present
-                    his metal figurines that he sclupted, to the Irish tourism board, so that they
-                    might consider funding them to be built to true scale in the hills of Donegal <br><br></p>
-                
-                <p class="pAlignRight">It was a nice project to do since I was given 60fps, 2k footage to motion track
-                    with. The images were quite small and not shot with a good quality camera, so
-                    the picture blends quite abit into the hills. However, even with this unplanned
-                    scernario I got the project rolled out in a 24 hour window and the client was
-                    able to present it on time.
-                    It was a nice project to do since I was given 60fps, 2k footage to motion track
-                    with. The images were quite small and not shot with a good quality camera, so
-                    the picture blends quite abit into the hills. However, even with this unplanned
-                    scernario I got the project rolled out in a 24 hour window and the client was
-                    able to present it on time.
-                </p>
-            </div>
-        </div>
-        <div class="row cadDesign">
-            <div class="textBox textAlignTop">
-                <p class="pAlignLeft">This was a personal project of mine. The purpose of this animation was to
-                    show the builders who were renovating my studio, the idea of how i wanted it mocked out.It was done very quickly and is more an example ofspeedy work, rather than quality of work.
-                </p>
-            </div>
-            <div class="videoCon cadDesign videoPaddingLeft">
-                <video preload="auto" controls="" class="video">
-                    <source src="http://virtualrealitydesigns.ie/wp-content/uploads/2019/05/VRD_Office.mp4" width="540" height="260">
-                </video>
-            </div>
-        </div>
-        <div class="row cadDesign">
-            <div class="videoCon cadDesign videoPaddingRight">
-                <video class="video" controls="" preload="auto">
-                    <source src="http://virtualrealitydesigns.ie/wp-content/uploads/2019/05/Wesbite-Header-High-Bitrate.mp4">
-                </video>
-            </div>
-            <div class="textBox textAlignTop">
-                <p class="pAlignRight">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non odio porttitor, ullamcorper justo a, rutrum nunc. Duis sagittis, eros quis sodales ultrices, enim turpis condimentum dui, ac pellentesque velit sapien ut ipsum. Vivamus fringilla et nibh non cursus. Cras volutpat leo vel metus congue scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fermentum tempor lorem, ut sollicitudin risus iaculis sagittis. Vivamus eu pellentesque ante, nec pellentesque enim. Cras vulputate faucibus tortor et vestibulum. Aenean non volutpat quam. Duis sed libero elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>
+        <div class="textBox textAlignTop">
+            <p>This was a little project I was asked to do for a client that wanted to present
+                his metal figurines that he sclupted, to the Irish tourism board, so that they
+                might consider funding them to be built to true scale in the hills of Donegal <br><br></p>
 
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce sollicitudin est tellus, id aliquet nisi sodales vel. In in diam at augue dapibus sagittis a a libero. Nullam a mauris eu purus consequat tincidunt. Nam at massa dolor. Phasellus ac quam gravida, pharetra urna at, tristique augue. Proin non consectetur magna. Suspendisse porta tincidunt tempor. Maecenas laoreet eget nunc et tincidunt. Integer fermentum felis a bibendum aliquam. Pellentesque nec diam pharetra, sagittis erat quis, pellentesque dolor. Mauris interdum molestie enim, pharetra lobortis risus vulputate non. Sed vestibulum, est eu imperdiet sodales, purus tortor convallis velit, ut faucibus elit diam sit amet orci.
-                </p>
-            </div>
+            <p>It was a nice project to do since I was given 60fps, 2k footage to motion track
+                with. The images were quite small and not shot with a good quality camera, so
+                the picture blends quite abit into the hills. However, even with this unplanned
+                scernario I got the project rolled out in a 24 hour window and the client was
+                able to present it on time.
+                It was a nice project to do since I was given 60fps, 2k footage to motion track
+                with. The images were quite small and not shot with a good quality camera, so
+                the picture blends quite abit into the hills. However, even with this unplanned
+                scernario I got the project rolled out in a 24 hour window and the client was
+                able to present it on time.
+            </p>
         </div>
-        <div class="row cadDesign">
-            <div class="textBox textAlignTop">
-                <p class="pAlignLeft">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non odio porttitor, ullamcorper justo a, rutrum nunc. Duis sagittis, eros quis sodales ultrices, enim turpis condimentum dui, ac pellentesque velit sapien ut ipsum. Vivamus fringilla et nibh non cursus. Cras volutpat leo vel metus congue scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fermentum tempor lorem, ut sollicitudin risus iaculis sagittis. Vivamus eu pellentesque ante, nec pellentesque enim. Cras vulputate faucibus tortor et vestibulum. Aenean non volutpat quam. Duis sed libero elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>
+    </div>
+    <div class="rowTwo cadDesign flex-container">
+        <div class="textBox textAlignTop">
+            <p>This was a personal project of mine. The purpose of this animation was to
+                show the builders who were renovating my studio, the idea of how i wanted it mocked out.It was done very quickly and is more an example ofspeedy work, rather than quality of work.
+            </p>
+        </div>
+        <div class="videoCon cadDesign videoPaddingLeft">
+            <video preload="auto" controls="" class="video">
+                <source src="http://virtualrealitydesigns.ie/wp-content/uploads/2019/05/VRD_Office.mp4" width="540" height="260">
+            </video>
+        </div>
+    </div>
+    <div class="row cadDesign flex-container">
+        <div class="videoCon cadDesign videoPaddingRight">
+            <video class="video" controls="" preload="auto">
+                <source src="http://virtualrealitydesigns.ie/wp-content/uploads/2019/05/Wesbite-Header-High-Bitrate.mp4">
+            </video>
+        </div>
+        <div class="textBox textAlignTop">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non odio porttitor, ullamcorper justo a, rutrum nunc. Duis sagittis, eros quis sodales ultrices, enim turpis condimentum dui, ac pellentesque velit sapien ut ipsum. Vivamus fringilla et nibh non cursus. Cras volutpat leo vel metus congue scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fermentum tempor lorem, ut sollicitudin risus iaculis sagittis. Vivamus eu pellentesque ante, nec pellentesque enim. Cras vulputate faucibus tortor et vestibulum. Aenean non volutpat quam. Duis sed libero elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>
 
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce sollicitudin est tellus, id aliquet nisi sodales vel. In in diam at augue dapibus sagittis a a libero. Nullam a mauris eu purus consequat tincidunt. Nam at massa dolor. Phasellus ac quam gravida, pharetra urna at, tristique augue. Proin non consectetur magna. Suspendisse porta tincidunt tempor. Maecenas laoreet eget nunc et tincidunt. Integer fermentum felis a bibendum aliquam. Pellentesque nec diam pharetra, sagittis erat quis, pellentesque dolor. Mauris interdum molestie enim, pharetra lobortis risus vulputate non. Sed vestibulum, est eu imperdiet sodales, purus tortor convallis velit, ut faucibus elit diam sit amet orci.
-                </p>
-            </div>
-            <div class="videoCon cadDesign videoPaddingLeft">
-                <video controls="" preload="auto" class="video">
-                    <source width="540" height="260" src="https://www.youtube.com/embed/8QLipZWf6oo">
-                </video>
-            </div>
+                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce sollicitudin est tellus, id aliquet nisi sodales vel. In in diam at augue dapibus sagittis a a libero. Nullam a mauris eu purus consequat tincidunt. Nam at massa dolor. Phasellus ac quam gravida, pharetra urna at, tristique augue. Proin non consectetur magna. Suspendisse porta tincidunt tempor. Maecenas laoreet eget nunc et tincidunt. Integer fermentum felis a bibendum aliquam. Pellentesque nec diam pharetra, sagittis erat quis, pellentesque dolor. Mauris interdum molestie enim, pharetra lobortis risus vulputate non. Sed vestibulum, est eu imperdiet sodales, purus tortor convallis velit, ut faucibus elit diam sit amet orci.
+            </p>
+        </div>
+    </div>
+    <div class="rowTwo cadDesign flex-container">
+        <div class="textBox">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non odio porttitor, ullamcorper justo a, rutrum nunc. Duis sagittis, eros quis sodales ultrices, enim turpis condimentum dui, ac pellentesque velit sapien ut ipsum. Vivamus fringilla et nibh non cursus. Cras volutpat leo vel metus congue scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi fermentum tempor lorem, ut sollicitudin risus iaculis sagittis. Vivamus eu pellentesque ante, nec pellentesque enim. Cras vulputate faucibus tortor et vestibulum. Aenean non volutpat quam. Duis sed libero elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>
+
+                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce sollicitudin est tellus, id aliquet nisi sodales vel. In in diam at augue dapibus sagittis a a libero. Nullam a mauris eu purus consequat tincidunt. Nam at massa dolor. Phasellus ac quam gravida, pharetra urna at, tristique augue. Proin non consectetur magna. Suspendisse porta tincidunt tempor. Maecenas laoreet eget nunc et tincidunt. Integer fermentum felis a bibendum aliquam. Pellentesque nec diam pharetra, sagittis erat quis, pellentesque dolor. Mauris interdum molestie enim, pharetra lobortis risus vulputate non. Sed vestibulum, est eu imperdiet sodales, purus tortor convallis velit, ut faucibus elit diam sit amet orci.
+            </p>
+        </div>
+        <div class="videoCon cadDesign videoPaddingLeft">
+            <video controls="" preload="auto" class="video">
+                <source width="540" height="260" src="https://www.youtube.com/embed/8QLipZWf6oo">
+            </video>
         </div>
     </div>
 </body>

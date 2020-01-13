@@ -192,9 +192,6 @@ body {
     background-color: #ffffff;
     position: fixed;
     top: 0;
-    -moz-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-    -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-    box-shadow: 0 5px 5px rgba(202, 202, 202, 0.30);
 }
 
 .navBar a,
@@ -216,24 +213,38 @@ body {
 }
 
 .navButton:hover {
-    background-color: #D1D1D1;
+    background-color: #bebebe;
 }
-
-
 
 .row {
     text-align: center;
     width: 100%;
     height: auto;
     background-color: #ffffff;
-    padding-bottom: 20px;
+    padding: 60px 0 60px 0;
+    background-image: url(../assets/blueArrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.rowTwo {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #00bbb4;
+    padding: 60px 0 60px 0;
+    background-image: url(../assets/whiteArrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .workChoiceNav {
     text-align: center;
     width: 100%;
     height: 50px;
-    background-color: #ffffff;
+    background-color: #00bbb4;
     padding-top: 70px;
 }
 
@@ -247,13 +258,13 @@ body {
 }
 
 .workChoiceButton {
-    padding: 100% 10px 8px 10px;
+    padding: 18px 10px 13px 10px;
     margin-right: 40px;
     cursor: pointer;
 }
 
 .workChoiceButton:hover {
-    background-color: #bebebe;
+    background-color: #02b0a9;
 }
 
 img {
@@ -280,30 +291,19 @@ img {
     display: inline-block;
 }
 
-.keepParagraphAndVideoTogether {
-    text-align: center;
-    display: inline-block;
-    width: 70%;
-    height: auto;
-    margin: -1 auto 0 auto;
-    padding: 11px 0 0 0;
-}
-
-.textAlignBottom {
-    vertical-align: bottom;
-}
-
-.textAlignTop {
-    vertical-align: top;
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: wrap;
 }
 
 .textBox {
     display: inline-block;
     width: 350px;
     height: 257px;
-    margin: 0 auto;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    border-top: 2px solid #02b0a9;
+    border-bottom: 2px solid #02b0a9;
     overflow: auto;
     /*-moz-box-shadow: inset 0 -10px 10px -10px #000000;
     -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
@@ -314,13 +314,9 @@ img {
     display: none;
 }
 
-.vimeoVideoContainer {
-    display: inline-block;
-    width: 525px;
-    height: 285px;
-    text-align: center;
-    margin: 0 auto;
-    vertical-align: top;
+.textBox p {
+    text-align: justify;
+    padding-top:5px;
 }
 
 .pAlignRight {
@@ -348,9 +344,8 @@ img {
 }
 
 .video {
-    width: 540px;
+    width: 432px;
     height: 260px;
-    border: 1px solid #000000;
 }
 
 .homeHeader {
