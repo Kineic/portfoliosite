@@ -53,7 +53,7 @@ function hideWork(className) {
     }
 }
 
-function alert(){
+function alert() {
     window.alert("sometext");
 }
 
