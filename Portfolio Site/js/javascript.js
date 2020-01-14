@@ -36,6 +36,7 @@ function showCADWork() {
     hideWork("uxUI");
     hideWork("graphicDesign");
     hideWork("coding");
+    bgToBlueArrow();
 }
 
 function showWork(className) {
@@ -49,5 +50,32 @@ function hideWork(className) {
     var list = document.getElementsByClassName(className);
     for (i = 0; i < list.length; i++) {
         list[i].style.display = "none";
+    }
+}
+
+function alert(){
+    window.alert("sometext");
+}
+
+function bgToWhiteArrow() {
+    changeBackgroundImageToWhiteArrow("rowBlueChange");
+}
+
+function bgToBlueArrow() {
+    changeBackgroundImageToBlueArrow("rowWhiteChange");
+}
+
+
+function changeBackgroundImageToBlueArrow(className) {
+    var list = document.getElementsByClassName(className);
+    for (i = 0; i < list.length; i++) {
+        list[i].style.backgroundImage = "none";
+    }
+}
+
+function changeBackgroundImageToWhiteArrow(className) {
+    var list = document.getElementsByClassName(className);
+    for (i = 0; i < list.length; i++) {
+        list[i].style.backgroundImage = "none";
     }
 }

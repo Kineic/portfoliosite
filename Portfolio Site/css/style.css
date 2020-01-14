@@ -1,178 +1,4 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-body {
-    line-height: 1;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-nav ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-input,
-select {
-    vertical-align: middle;
-}
-
-/*==============================================================RESET CODE ABOVE==============================================================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,700&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -194,10 +20,14 @@ body {
     top: 0;
 }
 
-.navBar a,
-.workChoiceNav a {
+.navBar a {
     text-decoration: none;
     color: black;
+}
+
+.workChoiceNav a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .navBar ul li {
@@ -216,7 +46,7 @@ body {
     background-color: #bebebe;
 }
 
-.row {
+.rowWhite {
     text-align: center;
     width: 100%;
     height: auto;
@@ -228,7 +58,23 @@ body {
     background-size: contain;
 }
 
-.rowTwo {
+.rowBlue {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #00bbb4;
+    padding: 60px 0 60px 0;
+    background-image: url(../assets/whiteArrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.test {
+    background-image: 
+}
+
+
+.rowWhiteChange {
     text-align: center;
     width: 100%;
     height: auto;
@@ -245,7 +91,7 @@ body {
     width: 100%;
     height: 50px;
     background-color: #00bbb4;
-    padding-top: 70px;
+    margin-top: 70px;
 }
 
 .centerUl {
@@ -255,6 +101,7 @@ body {
 
 .centerLi {
     display: inline;
+    padding-bottom: 20px;
 }
 
 .workChoiceButton {
@@ -300,14 +147,24 @@ img {
 
 .textBox {
     display: inline-block;
-    width: 350px;
-    height: 257px;
-    border-top: 2px solid #02b0a9;
-    border-bottom: 2px solid #02b0a9;
+    width: 405.938px;
+    height: 262px;
+    border: 5px solid #02b0a9;
+    padding: 0 30px 0 30px;
     overflow: auto;
-    /*-moz-box-shadow: inset 0 -10px 10px -10px #000000;
-    -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
-    box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.2);*/
+    background-color: #00a19a;
+    border-radius: 10px;
+}
+
+.videoSmallText {
+    display: inline-block;
+    width: 373.328px;
+    height: 262px;
+    border: 5px solid #02b0a9;
+    padding: 0 30px 0 30px;
+    overflow: auto;
+    background-color: #00a19a;
+    border-radius: 10px;
 }
 
 .textBox::-webkit-scrollbar {
@@ -316,7 +173,9 @@ img {
 
 .textBox p {
     text-align: justify;
-    padding-top:5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
 }
 
 .pAlignRight {
@@ -344,8 +203,9 @@ img {
 }
 
 .video {
-    width: 432px;
     height: 260px;
+    border-radius: 10px;
+    border: 5px solid #02b0a9;
 }
 
 .homeHeader {
@@ -463,9 +323,5 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .navBar {
-        display: none;
     }
 }
