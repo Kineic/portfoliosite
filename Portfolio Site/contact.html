@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Work Page</title>
+    <title>Contact</title>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -11,15 +11,30 @@
 </head>
 
 <body>
-    <div class="navBar">
+    <div class="navBarContact">
         <ul>
             <li>
-                <a class="navButton" href="home.html">Home</a>
-                <a class="navButton" href="work.html">Work</a>
-                <a class="navButton" href="contact.html">Contact</a>
+                <a class="navButtonContact" href="home.html">Home</a>
+                <a class="navButtonContact" href="work.html">Work</a>
+                <a class="navButtonContact" href="contact.html">Contact</a>
             </li>
         </ul>
     </div>
-</body>
+    <div class="flex-container-form">
+        <form>
+            <label for="email">Email Address</label>
+            <input type="text" class="emailField" name="email" placeholder="Please enter your email address">
 
-</html>
+            <label for="subject">Subject</label>
+            <textarea type="text" class="subjectField" name="subject" placeholder="Please enter your subject here"></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+        <div class="contactDetails">
+            <img src="/assets/phone.png" width="50" height="50" alt="Phone image located beside the contact number">
+            <h2><a href="tel:0873322471">087-332-2471</a></h2>
+            <img src="/assets/3dDesign.jpg" width="150" height="50">
+            <h2><a href="mailto:garethcraig97@gmail.com">garethcraig97@gmail.com</a></h2>
+        </div>
+    </div>
+</body></html>
